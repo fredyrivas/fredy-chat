@@ -1,12 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+<html>
+  <head>
+    <!--include ../snippets/analytics.pug-->
+    <!--include ../snippets/tagManagerHead.pug-->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta property="og:url" content="">
+<meta property="og:locale" content="">
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+<meta name="twitter:creator" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="">
+    <title>Fredy Rivas</title>
+  <meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="webpack-template"><link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="webpack-template"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="assets/favicons/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="assets/favicons/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="assets/favicons/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="assets/favicons/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="assets/favicons/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="assets/favicons/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="assets/favicons/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="assets/favicons/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="assets/favicons/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="assets/favicons/apple-touch-startup-image-1536x2008.png"><link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png"><link rel="shortcut icon" href="assets/favicons/favicon.ico"><link href="assets/css/main.css?c9edcb1903f12f23d396" rel="stylesheet"></head>
+  <body>
+    <!--include ../snippets/tagManagerBody.pug-->
+<header>
+  <h1><span>Super </span><span>Mega </span><span>Angry </span><span>Bros</span></h1>
+</header>
+    <body>
+<div class="gameContainer">
+  <div class="resultsContainer">
+    <h1>GAME OVER</h1>
+    <h2>Tu puntaje: <span class="finalPoints">+34</span></h2><a href="/">VOLVER A JUGAR</a>
+  </div>
+  <canvas class="jugador" id="player" width="108" height="100"></canvas>
+  <h1>Player: <span class="vidaDisplay">100%</span></h1>
+  <h1>Points:<span class="pointsDisplay"> +0</span></h1>
+  <h1 class="timeContainer">Time left:<span class="timesDisplay"> +0</span></h1>
+</div>
+<div id="controles-wrapper">
+  <div id="controles">
+    <div id="mando">
+      <div id="left-mando"></div>
+      <div id="top-mando"></div>
+      <div id="right-mando"></div>
+      <div id="bottom-mando"></div>
+    </div>
+    <div id="center"></div>
+    <div id="buttons">
+      <div id="b-btn"></div>
+      <div id="a-btn"></div>
+    </div>
+  </div>
+  <div id="controlimage"><img src="assets/img/nes-controller.svg"></div>
+</div>
+<div id="container"></div>
+    <script type="text/javascript" src="assets/js/app.js?c9edcb1903f12f23d396"></script></body>
+<footer> <span>Fredy Rivas 2018</span></footer>
+  </body>
 </html>
